@@ -1,0 +1,296 @@
+<html>
+    <title> form  </title>
+    <script src="script.js" type="text/javascript">
+    </script>
+    <body>
+    <style>
+        body{
+            background-color:wheat;
+        padding-left: 20px;
+        }
+        h3{
+             padding-right: 3em;
+        }
+
+        table{
+            margin: 80px;
+            padding: 10px;
+            
+            
+        }
+        .usr{
+            width: 240%;
+            margin-top: 8px;
+            height: 30px;
+
+        }
+        .email{
+            
+            width: 240%;
+            margin-top: 8px;
+            height: 30px;
+
+        }
+        
+        
+         .zip{
+            width: 40%;
+            margin-right: 50px;
+            height: 30px;
+        
+        
+        }
+
+        .country{
+            width: 80%;
+            height: 30px;
+            margin: 4px;
+
+            
+        }
+        .state{
+            width: 80%;
+            height: 30px;
+        }
+        .fl{
+            height: 30px;
+            width: 100%;
+        }
+        .fll{
+            
+        
+        }
+
+        #container  ul  li {
+              list-style: none;
+              text-align: center;
+              
+
+        width: 200px;
+         border: 1px ;
+         height: 40px;
+         line-height: px;
+         background-color:grey;
+         
+         border-color:silver 2px;
+          
+
+         
+         
+         
+         
+        
+            
+        }
+        .img{
+           margin-left: 330px;
+           
+           
+        }
+        h3{
+            margin-left: 300px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 1px;
+        }
+        .bil{
+            margin-left:5px;
+        }
+        .par{
+            font-weight: 5px;
+            font-size: 13px;
+            text-align: center;
+            margin-right: 110px;
+        }
+        .form{
+            margin-top: 1px;
+        }
+        table{
+            margin-top: -10px;
+        }
+        #check{
+            margin-top: -150px;
+            margin-left: 85px;
+        }
+        hr{
+            width: 52%;
+            margin-left: 90px;
+            margin-top: -70px;
+        }
+        .hr{
+            margin-top: 70px;
+        }
+        .pay{
+            margin-left: 90px;
+        }
+    #radio{
+        margin-left: 80px;
+        
+    }
+    .name{
+        margin-left: -5px;
+        font-style: inherit;
+        margin-top: 20px;
+        height: 50px;
+           }
+    .num{
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 50px;
+        
+    }
+    .exp{
+        
+        height: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        width: 50%;
+
+        
+    }
+    .cvv{
+        margin-left: 2px;
+        font-size: -5em;
+        width: 55%;
+        height: 25px;
+    
+    }
+    .submit{
+
+        width: 52%;
+        margin-left: 90px;
+        background-color: blue;
+        color: white;
+        height: 40px;
+        border-radius: 7px;
+    }
+    .ls{
+        width: 150%;
+        height: 30px;
+        
+    }
+    
+    
+        
+        
+        
+            
+        
+        
+    
+    </style >
+    <head >
+        <body>
+                <h3 align="right">Your cart</h3>
+            </div>
+            
+                   
+
+        
+            <form  align="left" class="form" onSubmit="checkAddress('email');">
+                
+            
+            <img   src="C:\\Users\\hp\\Desktop\\bootstrap-solid.svg" width="60px" height="60spx" class="img" >
+        <h3 >Checkout form</h3>
+        <p class="par">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a</br>validation state that can be triggered by attempting to submit the form </br>without completing it.</p></form>
+        <table align="center">
+            <tr>
+                <th ><h3 class="bil">Billing adresss</h3></th>
+                <td><h2 class="cart">Your cart</h2></td>
+
+            </tr>
+        
+           
+            <tr >
+            
+                
+                <td >first name</br><input type="text"  placeholder="first name" class="fl" ></td>
+                
+                <td class="fll">  last name</br><input type="text"  placeholder="last name" class="ls" ></td>
+            
+            
+
+            </tr>
+        
+            <tr >
+                <td class="usrname" >username</br><input type="email" class="usr" placeholder="username" ></td>
+            </tr>
+            <tr >
+                <td>Email(option)</br><input type="email" class="email"  placeholder="email" id="email" ></td>
+            </tr>
+            <tr >
+                <td >country</br><select id="country" class="country" >
+                    <option>pakistan</option>
+                    <option >india</option>
+                </select>
+
+
+            
+
+                
+            </td>
+            <td>state</br><select class="state">
+                <option>choose</option>
+                <option>karachi</option>
+            </select></td>
+        </td>
+        
+        <td>zip</br><input type="email" class="zip"></td>
+    
+            </tr>
+                        
+            
+
+            
+        </table>
+        <table class="hr">
+            <hr >
+        </table>
+        <div id="check">
+        <input type="checkbox">Shipping address is the same as my billing address
+    </br>  <input type="checkbox">Save this information for next time
+    </div></br>
+    <p class="hr"><hr></p>
+    <h4 class="pay">Payment</h4>
+    <div id="radio">
+    <input type="radio" name="credit card">Credit card</br>
+    <input type="radio" name="debit card">Debit card</br>
+    <input type="radio" name="paypal">Paypal
+
+</div>
+<table>
+    <tr >
+<td><p class="name">Name on card</br><input type="text"></p></td>
+<td><p class="num">credit card no</br><input type="text"></p></td>
+</tr>
+</table>
+<hr>
+<table>
+    <tr>
+        <td >Expiration</br><input type="text" class="exp" ></td>
+        <td ><p class="cv">CVV</br><input type="text" class="cvv" id="cvv" ></p></td>
+
+    </tr>
+</table>
+<hr>
+<input type="submit" value="Continur to Checkout" class="submit" onclick="submit2()">
+
+    
+    
+    
+    </form>
+    <table    id="table9">
+        <td>suleh</td>
+        <td>faseeh</td>
+        <td>ismail</td>
+        <td>ghaffar</td>
+
+
+
+    </table>
+
+
+        
+
+
+    </body>
+    </head>
+</html>
